@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #BFD7E4;
+  font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+  content: '';
+  background: #293241;
+  height: 465px;
+  width: 100vw;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.page {
+  width: 750px;
+  margin: 0 auto;
+}
+
+header {
+  color: #FFF;
+  height: 332px;
+  padding-top: 107px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+header p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+form {
+  min-height: 900px;
+  margin-bottom: 300px;
+  padding: 0 0 64px;
+  border-radius: 20px;
+  background: #FFF;
+
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+fieldset {
+  border: 0;
+}
+
+fieldset legend {
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  color: #253B51;
+
+  width: 100%;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #E6E6F0;
+}
+
+.fieldset-wrapper {
+  padding: 0 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.col2 {
+  display: flex;
+  gap: 22px;
+}
+
+.col2 > div {
+  width: 100%;
+}
+
+#legend-tittle {
+  background: #F67669;
+  width: 100%;
+  height: 133px;
+  border: 0;
+  border-radius: 20px 20px 0 0;
+  padding-top: 50px;
+  margin-bottom: 32px;
+
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  color: #FFF;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-wrapper span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+  margin-left: 8px;
+}
+
+.input-wrapper span:hover {
+  color: #787581;
+}
+
+.input-wrapper label,
+.input-wrapper input,
+.input-wrapper textarea,
+.checkbox-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+}
+
+.input-wrapper input,
+.input-wrapper select,
+.input-wrapper textarea {
+  height: 56px;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  padding: 0 16px;
+}
+
+.input-wrapper select {
+  width: 300px;
+  margin-right: 22px;
+}
+
+.input-wrapper textarea {
+  height: 166px;
+  padding: 16px;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper input {
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  display: block;
+}
+
+.checkbox-wrapper input:focus + label:before {
+  outline: 1.5px solid blue;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M9.55 17.65 4.225 12.325 5.275 11.25 9.55 15.525 18.725 6.35 19.775 7.425Z'/%3E%3C/svg%3E");
+}
+
+.col3 {
+  display: flex;
+  gap: 10px;
+}
+
+.col3 > div:nth-child(1) {
+  width: 100%;
+  margin-right: 22px;
+}
+
+form button {
+  margin: 24px 64px 0;
+  height: 51px;
+  background: #F67669;
+  border: 0;
+  border-radius: 8px;
+
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFF;
+}
+
+form button:hover {
+  background: #d95c4e;
+  cursor: pointer;
+}
